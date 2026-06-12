@@ -1,0 +1,28 @@
+.legal-body { background: var(--cream); }
+.legal-nav { background: rgba(255, 255, 255, .92); border-bottom: 1px solid var(--border); box-shadow: 0 8px 30px rgba(50, 30, 36, .06); padding: 13px 0; backdrop-filter: blur(14px); }
+.legal-back { color: var(--primary); font-size: .88rem; font-weight: 700; }
+.legal-back i { margin-right: 7px; }
+.legal-hero { background: linear-gradient(135deg, #fff 0%, #f9e9ee 100%); padding: 145px 0 65px; }
+.legal-hero .legal-icon { align-items: center; background: var(--primary); border-radius: 50%; color: #fff; display: flex; font-size: 1.4rem; height: 58px; justify-content: center; margin-bottom: 22px; width: 58px; }
+.legal-hero h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); letter-spacing: -2px; }
+.legal-hero p { color: var(--muted); margin: 15px 0 0; }
+.legal-page { padding: 70px 0 90px; }
+.legal-document { background: #fff; border: 1px solid var(--border); border-radius: 20px; box-shadow: var(--shadow); margin: auto; max-width: 900px; padding: 50px; }
+.legal-document h2 { font-size: 1.55rem; margin: 35px 0 12px; }
+.legal-document h2:first-child { margin-top: 0; }
+.legal-document h3 { font-family: "DM Sans", sans-serif; font-size: 1rem; margin: 25px 0 8px; }
+.legal-document p, .legal-document li { color: var(--muted); font-size: .93rem; line-height: 1.8; }
+.legal-document a { color: var(--primary); text-decoration: underline; }
+.legal-document ul { padding-left: 20px; }
+.legal-notice { background: var(--primary-soft); border-left: 4px solid var(--primary); border-radius: 8px; color: #713147; margin-bottom: 30px; padding: 16px 18px; }
+.legal-notice p { color: inherit; margin: 0; }
+.legal-footer { background: #201a1d; color: #fff; padding: 38px 0 25px; }
+.legal-footer-top { align-items: center; display: flex; justify-content: space-between; }
+.legal-links { display: flex; flex-wrap: wrap; gap: 20px; }
+.legal-links a { color: #aaa1a5; font-size: .78rem; }
+.legal-links a:hover, .legal-links a.active { color: #fff; }
+.legal-copyright { border-top: 1px solid #393135; color: #8c8487; font-size: .72rem; margin-top: 25px; padding-top: 20px; }
+@media (max-width: 767.98px) {
+  .legal-document { padding: 28px 22px; }
+  .legal-footer-top { align-items: flex-start; flex-direction: column; gap: 22px; }
+}

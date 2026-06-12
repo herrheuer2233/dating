@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Herzensbund verbindet alleinstehende Männer mit niveauvollen Frauen aus ganz Deutschland.">
+  <title>Herzensbund | Partnersuche mit echten Absichten</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#start" aria-label="Herzensbund Startseite">
+        <span class="brand-icon"><i class="fa-solid fa-heart"></i></span>
+        Herzensbund
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Navigation öffnen">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#so-gehts">So geht's</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ueber-uns">Über uns</a></li>
+          <li class="nav-item"><a class="btn btn-primary nav-cta" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section" id="start">
+      <div class="hero-shape hero-shape-one"></div>
+      <div class="hero-shape hero-shape-two"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <div class="eyebrow"><i class="fa-solid fa-location-dot"></i> Partnersuche in Deutschland</div>
+            <h1>Weil die Richtige nicht dem <span>Zufall</span> überlassen sein sollte.</h1>
+            <p class="hero-copy">Lerne sympathische, alleinstehende Frauen kennen, die wie du eine ehrliche und langfristige Partnerschaft suchen.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <a href="#profile" class="btn btn-primary btn-lg">Frauen kennenlernen <i class="fa-solid fa-arrow-right ms-2"></i></a>
+              <a href="#so-gehts" class="btn btn-light btn-lg">So funktioniert es</a>
+            </div>
+            <div class="hero-trust">
+              <div class="avatar-stack" aria-hidden="true">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+              </div>
+              <div>
+                <div class="stars" aria-label="5 von 5 Sternen">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span>Bereits über 12.000 glückliche Mitglieder</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="hero-visual">
+              <div class="hero-image-wrap">
+                <img src="images/hero.avif" alt="Lächelnde Frau">
+              </div>
+              <div class="floating-card card-match">
+                <span class="match-icon"><i class="fa-solid fa-heart"></i></span>
+                <div><strong>Neue Verbindung</strong><small>Vielleicht beginnt sie heute.</small></div>
+              </div>
+              <div class="floating-card card-safe">
+                <span><i class="fa-solid fa-shield-heart"></i></span>
+                <div><strong>Sicher & diskret</strong><small>Geprüfte Anfragen</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-lg-3"><i class="fa-solid fa-user-check"></i><strong>Handverlesene Profile</strong></div>
+          <div class="col-6 col-lg-3"><i class="fa-solid fa-lock"></i><strong>100 % diskret</strong></div>
+          <div class="col-6 col-lg-3"><i class="fa-solid fa-comments"></i><strong>Persönlicher Kontakt</strong></div>
+          <div class="col-6 col-lg-3"><i class="fa-solid fa-heart-circle-check"></i><strong>Ernsthafte Absichten</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding profiles-section" id="profile">
+      <div class="container">
+        <div class="section-heading text-center mx-auto">
+          <span class="section-kicker">Aktuelle Mitglieder</span>
+          <h2>Frauen, die auf dich warten</h2>
+          <p>Entdecke ausgewählte Profile aus ganz Deutschland. Klicke auf ein Profil, um dein Interesse unverbindlich mitzuteilen.</p>
+        </div>
+         <div class="row g-4" id="candidateGrid">
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Sophie" aria-label="Sophie, 31, aus Hamburg kennenlernen">
+        <div class="candidate-image">
+          <img src="images/01.jpg" alt="Profilbild von Sophie" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Sophie, 25</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Hamburg, Deutschland</p>
+          <div class="candidate-tags"><span>Reisen</span><span>Kultur</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Sophie chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Laura" aria-label="Laura, 29, aus München kennenlernen">
+        <div class="candidate-image">
+          <img src="images/02.jpg" alt="Profilbild von Laura" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Laura, 29</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>München, Deutschland</p>
+          <div class="candidate-tags"><span>Berge</span><span>Kochen</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Laura chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Anna" aria-label="Anna, 34, aus Berlin kennenlernen">
+        <div class="candidate-image">
+          <img src="images/03.jpg" alt="Profilbild von Anna" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Anna, 38</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Berlin, Deutschland</p>
+          <div class="candidate-tags"><span>Kunst</span><span>Konzerte</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Anna chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Julia" aria-label="Julia, 32, aus Köln kennenlernen">
+        <div class="candidate-image">
+          <img src="images/04.jpg" alt="Profilbild von Julia" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Julia, 32</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Köln, Deutschland</p>
+          <div class="candidate-tags"><span>Fitness</span><span>Genuss</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Julia chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Katharina" aria-label="Katharina, 36, aus Stuttgart kennenlernen">
+        <div class="candidate-image">
+          <img src="images/05.jpg" alt="Profilbild von Katharina" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Katharina, 36</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Stuttgart, Deutschland</p>
+          <div class="candidate-tags"><span>Natur</span><span>Lesen</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Katharina chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Marie" aria-label="Marie, 28, aus Düsseldorf kennenlernen">
+        <div class="candidate-image">
+          <img src="images/06.jpg" alt="Profilbild von Marie" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Marie, 28</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Düsseldorf, Deutschland</p>
+          <div class="candidate-tags"><span>Mode</span><span>Reisen</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Marie chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Leonie" aria-label="Leonie, 30, aus Leipzig kennenlernen">
+        <div class="candidate-image">
+          <img src="images/07.jpg" alt="Profilbild von Leonie" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Leonie, 37</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Leipzig, Deutschland</p>
+          <div class="candidate-tags"><span>Tanzen</span><span>Fotografie</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Leonie chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Nina" aria-label="Nina, 35, aus Bremen kennenlernen">
+        <div class="candidate-image">
+          <img src="images/08.jpg" alt="Profilbild von Nina" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Nina, 32</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Bremen, Deutschland</p>
+          <div class="candidate-tags"><span>Meer</span><span>Yoga</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Nina chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Johanna" aria-label="Johanna, 33, aus Frankfurt kennenlernen">
+        <div class="candidate-image">
+          <img src="images/09.jpg" alt="Profilbild von Johanna" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Johanna, 33</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Frankfurt, Deutschland</p>
+          <div class="candidate-tags"><span>Theater</span><span>Kulinarik</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Johanna chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Amelie" aria-label="Amelie, 27, aus Dresden kennenlernen">
+        <div class="candidate-image">
+          <img src="images/10.jpg" alt="Profilbild von Amelie" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Amelie, 27</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Dresden, Deutschland</p>
+          <div class="candidate-tags"><span>Musik</span><span>Wandern</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Amelie chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Charlotte" aria-label="Charlotte, 38, aus Hannover kennenlernen">
+        <div class="candidate-image">
+          <img src="images/11.jpg" alt="Profilbild von Charlotte" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Charlotte, 38</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Hannover, Deutschland</p>
+          <div class="candidate-tags"><span>Garten</span><span>Reisen</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Charlotte chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Lena" aria-label="Lena, 31, aus Nürnberg kennenlernen">
+        <div class="candidate-image">
+          <img src="images/12.jpg" alt="Profilbild von Lena" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Lena, 31</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Nürnberg, Deutschland</p>
+          <div class="candidate-tags"><span>Sport</span><span>Freunde</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Lena chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Isabell" aria-label="Isabell, 37, aus Essen kennenlernen">
+        <div class="candidate-image">
+          <img src="images/13.jpg" alt="Profilbild von Isabell" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Isabell, 37</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Essen, Deutschland</p>
+          <div class="candidate-tags"><span>Kunst</span><span>Kochen</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Isabell chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Miriam" aria-label="Miriam, 40, aus Lübeck kennenlernen">
+        <div class="candidate-image">
+          <img src="images/14.jpg" alt="Profilbild von Miriam" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Miriam, 40</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Lübeck, Deutschland</p>
+          <div class="candidate-tags"><span>Segeln</span><span>Literatur</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Miriam chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Clara" aria-label="Clara, 29, aus Freiburg kennenlernen">
+        <div class="candidate-image">
+          <img src="images/15.jpg" alt="Profilbild von Clara" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Clara, 29</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Freiburg, Deutschland</p>
+          <div class="candidate-tags"><span>Natur</span><span>Radfahren</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Clara chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Sarah" aria-label="Sarah, 34, aus Potsdam kennenlernen">
+        <div class="candidate-image">
+          <img src="images/16.jpg" alt="Profilbild von Sarah" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Sarah, 34</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Potsdam, Deutschland</p>
+          <div class="candidate-tags"><span>Reisen</span><span>Design</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Sarah chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Elena" aria-label="Elena, 36, aus Bonn kennenlernen">
+        <div class="candidate-image">
+          <img src="images/17.jpg" alt="Profilbild von Elena" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Elena, 36</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Bonn, Deutschland</p>
+          <div class="candidate-tags"><span>Musik</span><span>Genuss</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Elena chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Franziska" aria-label="Franziska, 32, aus Kiel kennenlernen">
+        <div class="candidate-image">
+          <img src="images/18.jpg" alt="Profilbild von Franziska" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Franziska, 32</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Kiel, Deutschland</p>
+          <div class="candidate-tags"><span>Meer</span><span>Konzerte</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Franziska chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Viktoria" aria-label="Viktoria, 39, aus Augsburg kennenlernen">
+        <div class="candidate-image">
+          <img src="images/19.jpg" alt="Profilbild von Viktoria" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Viktoria, 39</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Augsburg, Deutschland</p>
+          <div class="candidate-tags"><span>Kultur</span><span>Wandern</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Viktoria chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  
+    <div class="col-sm-6 col-lg-4 col-xl-3">
+      <article class="candidate-card" tabindex="0" role="button" data-name="Theresa" aria-label="Theresa, 30, aus Erfurt kennenlernen">
+        <div class="candidate-image">
+          <img src="images/20.jpg" alt="Profilbild von Theresa" loading="lazy">
+          <span class="online-badge">Kürzlich aktiv</span>
+        </div>
+        <div class="candidate-body">
+          <div class="candidate-top">
+            <h3>Theresa, 30</h3>
+            <i class="fa-solid fa-circle-check verified" title="Profil geprüft"></i>
+          </div>
+          <p class="candidate-location"><i class="fa-solid fa-location-dot"></i>Erfurt, Deutschland</p>
+          <div class="candidate-tags"><span>Cafés</span><span>Fotografie</span></div>
+          <button class="candidate-chat-btn" type="button" aria-label="Jetzt mit Theresa chatten">
+            <i class="fa-regular fa-comment-dots"></i> Jetzt chatten
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+          
+        <p class="profile-note text-center"><i class="fa-solid fa-circle-info"></i> Aus Diskretionsgründen werden hier Beispielprofile gezeigt.</p>
+      </div>
+    </section>
+
+    <section class="section-padding how-section" id="so-gehts">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-kicker">Einfach & persönlich</span>
+            <h2>In drei Schritten zu einer besonderen Begegnung</h2>
+            <p>Bei Herzensbund geht es nicht um endloses Wischen. Wir schaffen Raum für echtes Interesse und respektvolle Begegnungen.</p>
+            <a href="#profile" class="text-link">Jetzt Profile entdecken <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="col-lg-7">
+            <div class="steps-list">
+              <article class="step-card">
+                <span class="step-number">01</span>
+                <div class="step-icon"><i class="fa-regular fa-address-card"></i></div>
+                <div><h3>Profil auswählen</h3><p>Finde eine Frau, deren Werte und Vorstellungen zu deinen passen.</p></div>
+              </article>
+              <article class="step-card">
+                <span class="step-number">02</span>
+                <div class="step-icon"><i class="fa-regular fa-pen-to-square"></i></div>
+                <div><h3>Interesse mitteilen</h3><p>Hinterlasse uns deine Kontaktdaten sicher und unverbindlich.</p></div>
+              </article>
+              <article class="step-card">
+                <span class="step-number">03</span>
+                <div class="step-icon"><i class="fa-regular fa-comments"></i></div>
+                <div><h3>Persönlich kennenlernen</h3><p>Wir melden uns bei dir und begleiten den ersten Kontakt diskret.</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding story-section" id="ueber-uns">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="story-images">
+              <img class="story-main" src="images/about.jpg" alt="Glückliches Paar bei einem Spaziergang">
+              <div class="story-stat"><strong>87 %</strong><span>unserer Mitglieder suchen eine feste Partnerschaft</span></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="section-kicker">Über Herzensbund</span>
+            <h2>Wir glauben an Begegnungen mit Bedeutung.</h2>
+            <p>Zwischen Alltag, Beruf und Verpflichtungen ist es nicht immer leicht, den passenden Menschen zu treffen. Herzensbund bringt Männer und Frauen zusammen, die bereit für eine verbindliche Beziehung sind.</p>
+            <p>Unser Ansatz ist persönlich, respektvoll und auf Deutschland ausgerichtet. Jede Anfrage wird vertraulich behandelt.</p>
+            <div class="values-grid">
+              <div><i class="fa-solid fa-check"></i> Ehrliche Absichten</div>
+              <div><i class="fa-solid fa-check"></i> Deutsche Ansprechpartner</div>
+              <div><i class="fa-solid fa-check"></i> Datenschutz nach DSGVO</div>
+              <div><i class="fa-solid fa-check"></i> Keine versteckten Kosten</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-padding" id="kontakt">
+      <div class="container">
+        <div class="contact-panel">
+          <div class="row g-0">
+            <div class="col-lg-5 contact-info">
+              <span class="section-kicker light">Get in touch</span>
+              <h2>Du hast noch Fragen?</h2>
+              <p>Unser Team hilft dir persönlich, vertraulich und ohne Druck weiter.</p>
+              <ul class="contact-list">
+                <li><i class="fa-solid fa-phone"></i><div><small>Telefon</small><a href="tel:+493012345678">+49 30 123 45 678</a></div></li>
+                <li><i class="fa-solid fa-envelope"></i><div><small>E-Mail</small><a href="mailto:hallo@herzensbund.de">hallo@herzensbund.de</a></div></li>
+                <li><i class="fa-solid fa-location-dot"></i><div><small>Adresse</small><span>Friedrichstraße 88, 10117 Berlin</span></div></li>
+              </ul>
+            </div>
+            <div class="col-lg-7 contact-form-wrap">
+              <form id="contactForm" class="row g-3">
+                <input type="hidden" name="form_type" value="Kontaktanfrage">
+                <div class="col-md-6"><label for="contactName">Name</label><input class="form-control" id="contactName" name="name" required></div>
+                <div class="col-md-6"><label for="contactEmail">E-Mail</label><input class="form-control" id="contactEmail" name="email" type="email" required></div>
+                <div class="col-12"><label for="contactSubject">Betreff</label><input class="form-control" id="contactSubject" name="subject" required></div>
+                <div class="col-12"><label for="contactMessage">Nachricht</label><textarea class="form-control" id="contactMessage" name="message" rows="4" required></textarea></div>
+                <div class="col-12"><button class="btn btn-primary" type="submit">Nachricht senden <i class="fa-regular fa-paper-plane ms-2"></i></button></div>
+                <div class="col-12"><div class="form-status" aria-live="polite"></div></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <a class="navbar-brand" href="#start"><span class="brand-icon"><i class="fa-solid fa-heart"></i></span> Herzensbund</a>
+        <p>Partnersuche für Männer mit ernsthaften Absichten.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="currentYear"></span> Herzensbund. Alle Rechte vorbehalten.</span>
+        <div>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="data-protection.html">Datenschutz</a>
+          <a href="imprint.html">Impressum</a>
+          <a href="terms.html">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content signup-modal-content">
+        <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        <div class="modal-profile-header">
+          <img id="selectedCandidateImage" src="" alt="">
+          <div>
+            <span>Interesse an</span>
+            <h2 id="signupModalLabel">Profil</h2>
+            <p id="selectedCandidateMeta"></p>
+          </div>
+        </div>
+        <div class="modal-body">
+          <p class="modal-intro">Erzähle uns kurz etwas über dich. Wir behandeln deine Angaben selbstverständlich vertraulich.</p>
+          <form id="signupForm" class="row g-3">
+            <input type="hidden" name="candidate" id="selectedCandidate">
+            <input type="hidden" name="form_type" value="Profilanfrage">
+            <div class="col-md-8"><label for="signupName">Vollständiger Name</label><input class="form-control" id="signupName" name="name" required></div>
+            <div class="col-md-4"><label for="signupAge">Alter</label><input class="form-control" id="signupAge" name="age" type="number" min="18" max="99" required></div>
+            <div class="col-12"><label for="signupEmail">E-Mail-Adresse</label><input class="form-control" id="signupEmail" name="email" type="email" required></div>
+            <div class="col-12"><label for="signupPhone">Telefonnummer</label><input class="form-control" id="signupPhone" name="phone" type="tel" required></div>
+            <div class="col-12"><label for="signupAddress">Adresse</label><textarea class="form-control" id="signupAddress" name="address" rows="2" placeholder="Straße, Hausnummer, PLZ, Ort" required></textarea></div>
+            <div class="col-12">
+              <div class="form-check"><input class="form-check-input" id="privacyConsent" type="checkbox" required><label class="form-check-label" for="privacyConsent">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="privacy-policy.html" target="_blank" rel="noopener">Datenschutzerklärung</a> zu.</label></div>
+            </div>
+            <div class="col-12"><button class="btn btn-primary w-100" type="submit">Interesse unverbindlich senden <i class="fa-solid fa-heart ms-2"></i></button></div>
+            <div class="col-12"><div class="form-status" aria-live="polite"></div></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade age-modal" id="ageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content text-center">
+        <div class="age-icon"><i class="fa-solid fa-shield-heart"></i></div>
+        <h2 id="ageModalLabel">Bist du 18 Jahre oder älter?</h2>
+        <p>Diese Webseite richtet sich ausschließlich an volljährige Personen.</p>
+        <button class="btn btn-primary w-100 mb-2" id="confirmAge" type="button">Ja, ich bin mindestens 18</button>
+        <button class="btn btn-link age-decline" id="declineAge" type="button">Nein, Seite verlassen</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast success-toast" id="successToast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex align-items-center">
+        <div class="toast-body"><i class="fa-solid fa-circle-check"></i> <span>Vielen Dank! Deine Nachricht wurde gesendet.</span></div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Schließen"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
