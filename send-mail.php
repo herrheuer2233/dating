@@ -35,9 +35,12 @@ if ($name === '' || $email === false) {
     exit;
 }
 
-$subject = $formType === 'Profilanfrage'
-    ? 'Neue Profilanfrage bei Herzensbund'
-    : 'Neue Kontaktanfrage bei Herzensbund';
+$subject = 'Neue Kontaktanfrage bei Herzensbund';
+if ($formType === 'Profilanfrage') {
+    $subject = 'Neue Profilanfrage bei Herzensbund';
+} elseif ($formType === 'Registrierung') {
+    $subject = 'Neue Registrierung bei Herzensbund';
+}
 
 $fields = [
     'Art der Anfrage' => $formType,
@@ -71,7 +74,7 @@ $headers = [
     'MIME-Version: 1.0',
 ];
 
-if ($recipient === 'Herr.heuer2233@gmail.com') {
+if ($recipient === 'YOUR_EMAIL@example.com') {
     http_response_code(503);
     echo json_encode([
         'success' => false,

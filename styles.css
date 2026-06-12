@@ -22,6 +22,7 @@ a { color: inherit; text-decoration: none; }
 .brand-icon { align-items: center; background: var(--primary); border-radius: 50%; color: #fff; display: inline-flex; height: 34px; justify-content: center; width: 34px; }
 .nav-link { color: var(--ink); font-weight: 600; }
 .nav-link:hover { color: var(--primary); }
+.signup-link { color: var(--primary); }
 .nav-cta { padding: 10px 22px !important; }
 
 .btn { border-radius: 50px; font-weight: 700; padding: 12px 25px; }
@@ -149,23 +150,9 @@ footer .navbar-brand { color: #fff; }
 .footer-bottom div { display: flex; flex-wrap: wrap; gap: 20px; }
 .footer-bottom a:hover { color: #fff; }
 
-.signup-modal-content { border: 0; border-radius: 22px; overflow: hidden; }
-.modal-close { filter: brightness(0) invert(1); position: absolute; right: 18px; top: 18px; z-index: 2; }
-.modal-profile-header { align-items: center; background: linear-gradient(120deg, var(--primary), var(--primary-dark)); color: #fff; display: flex; gap: 17px; padding: 25px 30px; }
-.modal-profile-header img { border: 3px solid rgba(255, 255, 255, .65); border-radius: 50%; height: 76px; object-fit: cover; width: 76px; }
-.modal-profile-header span { color: #f0b6c6; font-size: .7rem; text-transform: uppercase; }
-.modal-profile-header h2 { font-size: 1.65rem; margin: 2px 0; }
-.modal-profile-header p { color: rgba(255, 255, 255, .75); font-size: .78rem; margin: 0; }
-.signup-modal-content .modal-body { padding: 28px 30px 30px; }
-.modal-intro { color: var(--muted); font-size: .85rem; }
 .form-check-label { color: var(--muted); font-size: .72rem; font-weight: 400; }
 .form-check-input:checked { background-color: var(--primary); border-color: var(--primary); }
 
-.age-modal .modal-content { border: 0; border-radius: 24px; box-shadow: var(--shadow); padding: 35px 28px 25px; }
-.age-icon { align-items: center; background: var(--primary-soft); border-radius: 50%; color: var(--primary); display: flex; font-size: 2rem; height: 78px; justify-content: center; margin: 0 auto 20px; width: 78px; }
-.age-modal h2 { font-size: 1.65rem; }
-.age-modal p { color: var(--muted); font-size: .85rem; margin-bottom: 22px; }
-.age-decline { color: var(--muted); font-size: .76rem; }
 .success-toast { border: 0; box-shadow: var(--shadow); }
 .success-toast i { color: #278256; font-size: 1.1rem; margin-right: 7px; }
 

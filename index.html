@@ -27,7 +27,8 @@
           <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
           <li class="nav-item"><a class="nav-link" href="#so-gehts">So geht's</a></li>
           <li class="nav-item"><a class="nav-link" href="#ueber-uns">Über uns</a></li>
-          <li class="nav-item"><a class="btn btn-primary nav-cta" href="#kontakt">Kontakt</a></li>
+          <li class="nav-item"><a class="nav-link signup-link" href="#kontakt"> Kontakt</a></li>
+          <li class="nav-item"><a class="btn btn-primary nav-cta" href="signup.html"><i class="fa-regular fa-user me-1"></i> Registrieren</a></li>
         </ul>
       </div>
     </div>
@@ -96,7 +97,7 @@
         <div class="section-heading text-center mx-auto">
           <span class="section-kicker">Aktuelle Mitglieder</span>
           <h2>Frauen, die auf dich warten</h2>
-          <p>Entdecke ausgewählte Profile aus ganz Deutschland. Klicke auf ein Profil, um dein Interesse unverbindlich mitzuteilen.</p>
+          <p>Entdecke ausgewählte Profile aus ganz Deutschland. Klicke auf ein Profil, um mehr über die Person zu erfahren.</p>
         </div>
          <div class="row g-4" id="candidateGrid">
     <div class="col-sm-6 col-lg-4 col-xl-3">
@@ -613,51 +614,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content signup-modal-content">
-        <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-        <div class="modal-profile-header">
-          <img id="selectedCandidateImage" src="" alt="">
-          <div>
-            <span>Interesse an</span>
-            <h2 id="signupModalLabel">Profil</h2>
-            <p id="selectedCandidateMeta"></p>
-          </div>
-        </div>
-        <div class="modal-body">
-          <p class="modal-intro">Erzähle uns kurz etwas über dich. Wir behandeln deine Angaben selbstverständlich vertraulich.</p>
-          <form id="signupForm" class="row g-3">
-            <input type="hidden" name="candidate" id="selectedCandidate">
-            <input type="hidden" name="form_type" value="Profilanfrage">
-            <div class="col-md-8"><label for="signupName">Vollständiger Name</label><input class="form-control" id="signupName" name="name" required></div>
-            <div class="col-md-4"><label for="signupAge">Alter</label><input class="form-control" id="signupAge" name="age" type="number" min="18" max="99" required></div>
-            <div class="col-12"><label for="signupEmail">E-Mail-Adresse</label><input class="form-control" id="signupEmail" name="email" type="email" required></div>
-            <div class="col-12"><label for="signupPhone">Telefonnummer</label><input class="form-control" id="signupPhone" name="phone" type="tel" required></div>
-            <div class="col-12"><label for="signupAddress">Adresse</label><textarea class="form-control" id="signupAddress" name="address" rows="2" placeholder="Straße, Hausnummer, PLZ, Ort" required></textarea></div>
-            <div class="col-12">
-              <div class="form-check"><input class="form-check-input" id="privacyConsent" type="checkbox" required><label class="form-check-label" for="privacyConsent">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="privacy-policy.html" target="_blank" rel="noopener">Datenschutzerklärung</a> zu.</label></div>
-            </div>
-            <div class="col-12"><button class="btn btn-primary w-100" type="submit">Interesse unverbindlich senden <i class="fa-solid fa-heart ms-2"></i></button></div>
-            <div class="col-12"><div class="form-status" aria-live="polite"></div></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade age-modal" id="ageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-      <div class="modal-content text-center">
-        <div class="age-icon"><i class="fa-solid fa-shield-heart"></i></div>
-        <h2 id="ageModalLabel">Bist du 18 Jahre oder älter?</h2>
-        <p>Diese Webseite richtet sich ausschließlich an volljährige Personen.</p>
-        <button class="btn btn-primary w-100 mb-2" id="confirmAge" type="button">Ja, ich bin mindestens 18</button>
-        <button class="btn btn-link age-decline" id="declineAge" type="button">Nein, Seite verlassen</button>
-      </div>
-    </div>
-  </div>
 
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div class="toast success-toast" id="successToast" role="status" aria-live="polite" aria-atomic="true">
