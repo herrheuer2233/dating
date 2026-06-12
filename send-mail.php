@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // Replace this address with the mailbox that should receive website enquiries.
-$recipient = 'YOUR_EMAIL@example.com';
+$recipient = 'Herr.heuer2233@gmail.com';
 // Use an address on the domain where this website is hosted.
 $sender = 'no-reply@YOUR_DOMAIN.de';
 
@@ -71,7 +71,7 @@ $headers = [
     'MIME-Version: 1.0',
 ];
 
-if ($recipient === 'YOUR_EMAIL@example.com') {
+if ($recipient === 'Herr.heuer2233@gmail.com') {
     http_response_code(503);
     echo json_encode([
         'success' => false,
