@@ -131,23 +131,35 @@ body {
 }
 
 .slider-item.item-1.preload {
-    background-image: url(../img/bg1.jpg);
-    background-color: #0f1f07
+    background-image:
+        linear-gradient(rgba(15, 31, 7, 0.6), rgba(15, 31, 7, 0.6)),
+        url(../img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .slider-item.item-2.preload {
-    background-image: url(../img/bg2.jpg);
-    background-color: #5947a5
+    background-image:
+        linear-gradient(rgba(15, 31, 7, 0.6), rgba(15, 31, 7, 0.6)),
+        url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .slider-item.item-3.preload {
-    background-image: url(../img/bg3.jpg);
-    background-color: #571129
+    background-image:
+        linear-gradient(rgba(15, 31, 7, 0.6), rgba(15, 31, 7, 0.6)),
+        url(../img/bg3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .slider-item.item-4.preload {
-    background-image: url(../img/bg4.jpg);
-    background-color: #5a0000
+     background-image:
+        linear-gradient(rgba(15, 31, 7, 0.6), rgba(15, 31, 7, 0.6)),
+        url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .logo {
